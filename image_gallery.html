@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thumbnail Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 20px;
+            color: #333;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .gallery_item{
+            margin: 10px;
+        }
+
+        .gallery_item img {
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+
+        .gallery_item img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Image Gallery</h1>
+    <div class="gallery">
+    
+        <!-- Image 1 -->
+        <div class="gallery.item">
+        <a href="image1-full.jpg" target="_blank">
+            <img src="image1-thumbnail.jpg" alt="Image 1" width="700px" height="700">
+        </a>
+        </div>
+
+        <!-- Image 2 -->
+        <div class="gallery.item">
+        <a href="image2-full.jpg" target="_blank">
+            <img src="image2-thumbnail.jpg" alt="Image 2" width="700px" height="700px">
+        </a>
+        </div>
+
+        <!-- Image 3 -->
+        <div class="gallery.item">
+        <a href="image3-full.jpg" target="_blank">
+            <img src="image3-thumbnail.jpg" alt="Image 3" width="700px" height="700px">
+        </a>
+        </div>
+
+        <!-- Image 4 -->
+        <div class="gallery.item">
+        <a href="image4-full.jpg" target="_blank">
+            <img src="image4-thumbnail.jpg" alt="Image 4" width="700px" height="700px">
+        </a>
+        </div>
+    </div>
+</body>
+</html>
